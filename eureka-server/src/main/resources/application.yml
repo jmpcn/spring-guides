@@ -1,0 +1,17 @@
+server:
+  port: 8761
+
+#TODO: figure out why I need this here and in bootstrap.yml
+spring:
+  application:
+    name: EurekaServer
+    
+logging:
+  config: classpath:log4j2.xml
+  
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+
